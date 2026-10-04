@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>언어 공부</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+                   "Noto Sans KR", sans-serif;
+      background: #f7f8fc;
+      color: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 720px;
+      padding: 32px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 32px;
+    }
+
+    .subtitle {
+      margin-bottom: 35px;
+      color: #777;
+      font-size: 15px;
+    }
+
+    .languages {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .language-card {
+      background: white;
+      border-radius: 24px;
+      padding: 38px 20px;
+      text-decoration: none;
+      color: #222;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.07);
+      transition: 0.2s;
+    }
+
+    .language-card:active {
+      transform: scale(0.97);
+    }
+
+    .flag {
+      font-size: 52px;
+      margin-bottom: 16px;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .chinese {
+      border: 2px solid #e8d7c7;
+    }
+
+    .japanese {
+      border: 2px solid #f1d4dc;
+    }
+
+    @media (max-width: 560px) {
+      .languages {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .language-card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>오늘은 어떤 언어를 공부할까요?</h1>
+
+    <div class="subtitle">
+      공부할 언어를 선택해주세요
+    </div>
+
+    <div class="languages">
+
+      <a class="language-card chinese"
+         href="https://chinese-study-chi.vercel.app">
+
+        <div class="flag">🇨🇳</div>
+        <div class="name">중국어</div>
+        <div class="description">
+          中文 · 중국어 공부
+        </div>
+
+      </a>
+
+      <a class="language-card japanese"
+         href="https://japanese-study-red.vercel.app">
+
+        <div class="flag">🇯🇵</div>
+        <div class="name">일본어</div>
+        <div class="description">
+          日本語 · 일본어 공부
+        </div>
+
+      </a>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
