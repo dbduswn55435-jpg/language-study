@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/chinese/:path*",
+      "destination": "https://chinese-study-chi.vercel.app/:path*"
+    },
+    {
+      "source": "/japanese/:path*",
+      "destination": "https://japanese-study-red.vercel.app/:path*"
+    }
+  ]
+}
